@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: #f7f9fc;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+header {
+    background: #1f3b5b;
+    color: white;
+    padding: 18px 0;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+nav a:hover,
+nav a.active {
+    border-bottom: 2px solid white;
+}
+
+.hero {
+    background: white;
+    padding: 70px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero img,
+.career-layout img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.eyebrow {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #3f6f8f;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.lead,
+.section-intro {
+    font-size: 1.1rem;
+    max-width: 760px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: #1f3b5b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #315777;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.callout {
+    margin-top: 35px;
+    background: #e7eef5;
+    border-left: 5px solid #1f3b5b;
+    padding: 22px;
+    border-radius: 6px;
+}
+
+.career-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.career-list {
+    padding-left: 22px;
+    font-size: 1.05rem;
+}
+
+footer {
+    background: #101d2c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+    .hero-grid,
+    .career-layout,
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-wrap {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

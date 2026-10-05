@@ -1,37 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Civil Engineering Career</title>
-  <style>
-    body { font-family: Arial; background-color: #f2f6ff; margin: 0; }
-    header { background-color: #0b3d91; color: white; padding: 20px; text-align: center; }
-    main { padding: 25px; max-width: 900px; margin: auto; background: white; }
-    h2 { color: #0b3d91; }
-    img { width: 100%; max-width: 500px; display: block; margin: 20px auto; }
-    nav a { color: white; margin: 10px; }
-  </style>
+    <!-- Author: Gregory Lewis -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Engineering | Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Civil Engineering</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="ethics.html">Ethics</a>
-      <a href="cyber-AI.html">Cybersecurity & AI</a>
-    </nav>
-  </header>
+    <header>
+        <div class="container nav-wrap">
+            <h1 class="logo">Civil Engineering</h1>
+            <nav>
+                <a class="active" href="index.html">Home</a>
+                <a href="fields.html">Fields</a>
+                <a href="careers.html">Careers</a>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <h2>Industry of Interest</h2>
-    <p>Civil engineering is the industry that focuses on designing, building, and maintaining infrastructure such as roads, bridges, buildings, water systems, and transportation systems.</p>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">BUILDING THE WORLD AROUND US</p>
+                    <h2>Designing stronger, safer, and smarter communities.</h2>
+                    <p class="lead">
+                        Civil engineers plan, design, and improve the infrastructure people use every day,
+                        including roads, bridges, buildings, water systems, and communities.
+                    </p>
+                    <a class="button" href="fields.html">Explore Civil Engineering</a>
+                </div>
+                <img src="images/bridge.svg" alt="Illustration of a bridge">
+            </div>
+        </section>
 
-    <h2>Career Interest</h2>
-    <p>A career that interests me is structural engineering. Structural engineers design and analyze buildings, bridges, and other structures to make sure they are safe, stable, and reliable.</p>
+        <section class="section">
+            <div class="container">
+                <h2>What Do Civil Engineers Do?</h2>
+                <p class="section-intro">
+                    Civil engineering combines math, science, technology, and problem solving to create
+                    infrastructure that supports everyday life.
+                </p>
 
-    <h2>Cybersecurity and AI Impact</h2>
-    <p>Cybersecurity impacts civil engineering because engineers use digital drawings, project files, sensors, and construction data that must be protected. AI also impacts the career because it can help engineers design structures, predict problems, and improve safety. However, engineers must use AI carefully and check its results.</p>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Design</h3>
+                        <p>Create plans for roads, buildings, bridges, drainage systems, and other infrastructure.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Analyze</h3>
+                        <p>Use engineering calculations and software to make sure structures and systems are safe.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Improve</h3>
+                        <p>Help communities grow by improving transportation, water, and public infrastructure.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Civil engineering construction site">
-  </main>
+    <footer>
+        <p>Created by Gregory Lewis | Civil Engineering Website Project</p>
+    </footer>
 </body>
 </html>
