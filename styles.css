@@ -42,7 +42,29 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding-bottom: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 8px 12px;
+    border-bottom: 2px solid transparent;
+}
+
+img, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-grid > *, .career-layout > *, .cards > * {
+    min-width: 0;
+}
+
+body { overflow-wrap: anywhere; }
+
+a:focus-visible {
+    outline: 3px solid #b36a00;
+    outline-offset: 4px;
 }
 
 nav a:hover,
@@ -169,3 +191,32 @@ footer {
         justify-content: center;
     }
 }
+
+@media (max-width: 480px) {
+    .container { width: calc(100% - 32px); }
+    .hero { padding: 36px 0; }
+    .section { padding: 36px 0; }
+    .hero-grid, .career-layout { gap: 24px; }
+    .nav-wrap { gap: 12px; }
+    nav { gap: 8px; }
+    h2 { font-size: clamp(1.75rem, 8vw, 2.25rem); line-height: 1.2; }
+    .lead, .section-intro, .career-list { font-size: 1rem; }
+    .eyebrow { font-size: .8rem; letter-spacing: 1px; }
+    .card, .callout { padding: 20px; }
+    .button { max-width: 100%; text-align: center; }
+    footer { margin-top: 24px; padding: 20px 16px; }
+}
+
+/* Final revision: consistent navigation, readable career details, and integrated JavaScript. */
+.nav-wrap { flex-wrap: wrap; }
+nav { flex-wrap: wrap; gap: 8px; }
+.logo a { color: white; text-decoration: none; }
+.skip-link { position: absolute; left: 12px; top: -80px; background: white; color: #172033; padding: 10px; z-index: 10; }
+.skip-link:focus { top: 12px; }
+.job-description { margin: 4px 0 18px; font-size: 1rem; }
+.quote-card { background: white; border: 1px solid #d9e3ed; border-top: 5px solid #1f3b5b; padding: 28px; border-radius: 8px; }
+.quote-card blockquote { margin: 16px 0; font-size: clamp(1.2rem, 3vw, 1.7rem); }
+.quote-card .credit, .quote-card .count, .quote-card .hint { font-size: .9rem; }
+.quote-card button { background: #1f3b5b; color: white; border: 0; padding: 14px 18px; font: inherit; font-weight: bold; cursor: pointer; border-radius: 4px; }
+:focus-visible { outline: 3px solid #b36a00; outline-offset: 4px; }
+@media (max-width: 1000px) { .nav-wrap { flex-direction: column; } nav { justify-content: center; } }

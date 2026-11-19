@@ -6,20 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Civil Engineering | Home</title>
     <link rel="stylesheet" href="styles.css">
+<meta name="description" content="Explore civil engineering, infrastructure, professional values, and career opportunities.">
+<link rel="icon" href="images/bridge.svg" type="image/svg+xml">
+<script src="quotes.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container nav-wrap">
-            <h1 class="logo">Civil Engineering</h1>
-            <nav>
-                <a class="active" href="index.html">Home</a>
-                <a href="fields.html">Fields</a>
-                <a href="careers.html">Careers</a>
-            </nav>
-        </div>
-    </header>
+<a class="skip-link" href="#main-content">Skip to content</a>
+    <header><div class="container nav-wrap"><h1 class="logo"><a href="index.html" aria-label="Civil Engineering home">Civil Engineering</a></h1><nav aria-label="Main navigation"><a href="index.html" class="active" aria-current="page">Home</a><a href="fields.html">Fields</a><a href="careers.html">Careers</a><a href="ethics.html">Ethics</a><a href="cyber-AI.html">Cybersecurity & AI</a></nav></div></header>
 
-    <main>
+    <main id="main-content">
         <section class="hero">
             <div class="container hero-grid">
                 <div>
@@ -31,7 +26,7 @@
                     </p>
                     <a class="button" href="fields.html">Explore Civil Engineering</a>
                 </div>
-                <img src="images/bridge.svg" alt="Illustration of a bridge">
+                <img width="700" height="450" src="images/bridge.svg" alt="Illustration of a bridge">
             </div>
         </section>
 
@@ -59,7 +54,19 @@
                 </div>
             </div>
         </section>
-    </main>
+    <section class="section"><div class="container"><section class="quote-card" aria-labelledby="card-title">
+      <h2 id="card-title">A thought to build on</h2>
+      <div id="quote-output" aria-live="polite" aria-atomic="true">
+        <p id="quote-topic" class="topic">PUBLIC SAFETY</p>
+        <blockquote><p id="quote-text">A strong design begins with responsibility for the people who will use it.</p></blockquote>
+        <p class="credit">Original project message · Civil Engineering Website</p>
+        <p id="quote-count" class="count">Message 1 of 6</p>
+      </div>
+      <button id="new-quote" type="button">Show another perspective <span aria-hidden="true">→</span></button>
+      <p class="hint">Each click selects a different message. Keyboard: Tab to the button, then press Enter or Space.</p>
+      <noscript><p>JavaScript is disabled. Enable it to generate another message; the first message remains available above.</p></noscript>
+    </section></div></section>
+</main>
 
     <footer>
         <p>Created by Gregory Lewis | Civil Engineering Website Project</p>
